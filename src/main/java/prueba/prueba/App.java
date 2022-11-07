@@ -26,9 +26,9 @@ public class App {
         ArrayList<Libro> libroLista = new ArrayList<Libro>();
  
         // Creamos dos libros y los añadimos
-        Libro libro1 = new Libro("Entornos de Desarrollo", "Alicia Ramos","Garceta","978-84-1545-297-3" );
+        Libro libro1 = new Libro("Entornos de Desarrollo","flor1", "Alicia Ramos","Garceta","978-84-1545-297-3" );
         libroLista.add(libro1);
-        Libro libro2 = new Libro("Acceso a Datos", "Maria Jesús Ramos","Garceta","978-84-1545-228-7" );
+        Libro libro2 = new Libro("Acceso a Datos", "flor2", "Maria Jesús Ramos","Garceta","978-84-1545-228-7" );
         libroLista.add(libro2);
  
         // Se crea La libreria y se le asigna la lista de libros

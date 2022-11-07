@@ -1,16 +1,20 @@
 package prueba.prueba;
 
+import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlType;
 
-@XmlType(propOrder = {"autor", "nombre", "editorial", "isbn"})
+@XmlType(propOrder = {"autor", "clave","nombre", "editorial", "isbn"})
 
 public class Libro { 
     private String nombre;
+    private String clave;
+   
     private String autor;
     private String editorial;
     private String isbn;
-    public Libro(String nombre, String autor, String editorial, String isbn) {
+    public Libro(String nombre,String clave,String autor, String editorial, String isbn) {
 		super();
+        this.clave=clave;
 		this.nombre = nombre;
 		this.autor = autor;
 		this.editorial = editorial;
@@ -25,4 +29,7 @@ public class Libro {
     public void setAutor(String autor) { this.autor = autor; }
     public void setEditorial(String editorial) { this.editorial = editorial;  }
     public void setIsbn(String isbn) {  this.isbn = isbn;  }
+    @XmlAttribute(name="clave")
+    public String getClave() {return clave;    }
+    public void setClave(String clave) {this.clave = clave; }
 }

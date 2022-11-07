@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <libreria>
     <ListaLibro>
-        <Libro>
+        <Libro clave="flor1">
             <autor>Alicia Ramos</autor>
             <nombre>Entornos de Desarrollo</nombre>
             <editorial>Garceta</editorial>
             <isbn>978-84-1545-297-3</isbn>
         </Libro>
-        <Libro>
+        <Libro clave="flor2">
             <autor>Maria Jesús Ramos</autor>
             <nombre>Acceso a Datos</nombre>
             <editorial>Garceta</editorial>
